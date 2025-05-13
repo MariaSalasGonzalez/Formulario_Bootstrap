@@ -24,4 +24,4 @@ Página web desarrollada como parte de una tarea académica, implementando el fo
 - Bootstrap 5
 
 
-🔗 [Ver el sitio en vivo](https://mariasalasgonzalez.github.io/Sitio-Web-con-Bootstrap/)
+🔗 [Ver el sitio en vivo](https://mariasalasgonzalez.github.io/Formulario_Bootstrap/)
