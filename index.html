@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+
+<!-- Idioma –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<html lang="es">
+
+<!-- Cabecera –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declaración del Impuesto sobre Bienes Inmuebles</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- Cuerpo –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<body>
+    <div class="container py-4">
+        <div class="form-container">
+            <form class="needs-validation" novalidate>
+                <div class="row form-header mx-0">
+    <div class="col-3 border-end">
+        <div class="mb-2" style="font-size: 0.8rem;">
+            El contribuyente solicitó asistencia del funcionario Municipal para completar la presente Declaración
+        </div>
+     
+        <div class="d-flex justify-content-start align-items-start gap-4">
+          <div class="d-flex flex-column align-items-start">
+            <label><input type="checkbox" class="me-1">SI</label>
+            <label><input type="checkbox" class="me-1">NO</label>
+          </div>
+
+          <div class="d-flex flex-column align-items-start">
+            <input type="text" placeholder="Escriba su firma"
+                  style="background: transparent; border: none; border-bottom: 1px solid gray; outline: none; width: 90px;">
+            <label class="fw-bold mb-1 text-center">Firma</label>
+          </div>
+        </div>
+        </div>
+    <div class="col-7 border-end d-flex flex-column align-items-center justify-content-center">
+        <h5 class="text-center fw-bold mb-2">MUNICIPALIDAD DE DESAMPARADOS</h5>
+        <h5 class="text-center fw-bold">DECLARACIÓN DEL IMPUESTO SOBRE BIENES INMUEBLES</h5>
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span class="text-center fw-bold">ZONA HOMOGENEA</span>
+          <input type="text" placeholder="Ingrese nombre de la zona"
+                  style="background: transparent; border: none; border-bottom: 1px solid gray; color: black; outline: none;">
+        </div>
+    </div>
+
+    <div class="col-2 d-flex align-items-center justify-content-center">
+        <img src="images/escudo.png" alt="Escudo Desamparados" width="70" height="90">
+    </div>
+</div>
+
+<!-- 1) Cuadro I –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+                <div class="form-section">
+                    <div class="form-section-title">CUADRO I. IDENTIFICACIÓN DEL PROPIETARIO</div>
+                    <div class="row mx-0 form-field">
+                        <div class="col-4">
+                            <label for="cedula" class="form-label required-field">1. N° DE CÉDULA (Física o jurídica):</label>
+                            <input type="text" class="form-control input-sm" id="cedula" placeholder="Ingrese su número de cédula" required>
+                            <div class="invalid-feedback">
+                                Por favor ingrese su número de cédula.
+                            </div>
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center">
+                            <div style="border-left: 1px solid #ccc; height: 120%;"></div>
+                        </div>
+                        <div class="col-7">
+                            <label for="apellidos" class="form-label required-field">2. APELLIDOS Y NOMBRE O RAZÓN SOCIAL:</label>
+                            <input type="text" class="form-control input-sm" id="apellidos" placeholder="Ingrese sus apellidos y nombre" required>
+                            <div class="invalid-feedback">
+                                Por favor ingrese sus apellidos y nombre.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-0 form-field">
+                        <div class="col-12">
+                            <label for="domicilio" class="form-label">3. DOMICILIO FISCAL (SEÑAS):</label>
+                            <input type="text" class="form-control input-sm" id="domicilio" placeholder="Ingrese su domicilio fiscal completo">
+                        </div>
+                    </div>
+                    <div class="row mx-0 form-field">
+                        <div class="col">
+                            <label for="provincia" class="form-label">4. PROVINCIA:</label>
+                            <select class="form-select input-sm" id="provincia">
+                                <option selected>Seleccione</option>
+                                <option>San José</option>
+                                <option>Alajuela</option>
+                                <option>Cartago</option>
+                                <option>Heredia</option>
+                                <option>Guanacaste</option>
+                                <option>Puntarenas</option>
+                                <option>Limón</option>
+                            </select>
+                        </div>
+                        <div class="col-1 d-flex justify-content-center align-items-center">
+                            <div style="border-left: 1px solid #ccc; height: 120%;"></div>
+                        </div>
+                        <div class="col">
+                            <label for="canton" class="form-label">5. N° CANTÓN:</label>
+                            <input type="text" class="form-control input-sm" id="canton">
+                        </div>
+                        <div class="col-1 d-flex justify-content-center align-items-center">
+                            <div style="border-left: 1px solid #ccc; height: 120%;"></div>
+                        </div>
+                        <div class="col">
+                            <label for="distrito" class="form-label">6. DISTRITO:</label>
+                            <input type="text" class="form-control input-sm" id="distrito">
+                        </div>
+                        <div class="col-1 d-flex justify-content-center align-items-center">
+                            <div style="border-left: 1px solid #ccc; height: 120%;"></div>
+                        </div>
+                        <div class="col">
+                            <label for="telefono" class="form-label">7. N° TELÉFONO:</label>
+                            <input type="tel" class="form-control input-sm" id="telefono" placeholder="0000-0000">
+                        </div>
+                        <div class="col-1 d-flex justify-content-center align-items-center">
+                            <div style="border-left: 1px solid #ccc; height: 120%;"></div>
+                        </div>
+                        <div class="col">
+                            <label for="fax" class="form-label">8. N° FAX:</label>
+                            <input type="tel" class="form-control input-sm" id="fax" placeholder="0000-0000">
+                        </div>
+                    </div>
+                    <div class="row mx-0 form-field">
+                        <div class="col-12">
+                            <label for="email" class="form-label required-field">9. CORREO ELECTRÓNICO PARA NOTIFICACIONES:</label>
+                            <input type="email" class="form-control input-sm" id="email" placeholder="ejemplo@correo.com" required>
+                            <div class="invalid-feedback">
+                                Por favor ingrese un correo electrónico válido.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mx-0 form-field">
+                        <div class="col-12">
+                            <label class="form-label">EN CASO DE PERSONA JURÍDICA ANOTAR DATOS DEL REPRESENTANTE LEGAL:</label>
+                        </div>
+                    </div>
+                    <div class="row mx-0 form-field">
+                        <div class="col-4">
+                            <label for="rep_cedula" class="form-label">10. N° CÉDULA:</label>
+                            <input type="text" class="form-control input-sm" id="rep_cedula">
+                        </div>
+                        <div class="col-1 d-flex justify-content-center align-items-center">
+                            <div style="border-left: 1px solid #ccc; height: 120%;"></div>
+                        </div>
+                        <div class="col-7">
+                            <label for="rep_nombre" class="form-label">11. NOMBRE Y APELLIDOS:</label>
+                            <input type="text" class="form-control input-sm" id="rep_nombre">
+                        </div>
+                    </div>
+                    <div class="row mx-0 form-field">
+                        <div class="col-12">
+                            <label for="rep_domicilio" class="form-label">12. DOMICILIO FISCAL (SEÑAS):</label>
+                            <input type="text" class="form-control input-sm" id="rep_domicilio">
+                        </div>
+                    </div>
+                    <div class="row mx-0 form-field">
+                        <div class="col">
+                            <label for="rep_provincia" class="form-label">13. PROVINCIA:</label>
+                            <select class="form-select input-sm" id="rep_provincia">
+                                <option selected>Seleccione</option>
+                                <option>San José</option>
+                                <option>Alajuela</option>
+                                <option>Cartago</option>
+                                <option>Heredia</option>
+                                <option>Guanacaste</option>
+                                <option>Puntarenas</option>
+                                <option>Limón</option>
+                            </select>
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center">
+                            <div style="border-left: 1px solid #ccc; height: 120%;"></div>
+                        </div>
+                        <div class="col">
+                            <label for="rep_canton" class="form-label">14. CANTÓN:</label>
+                            <input type="text" class="form-control input-sm" id="rep_canton">
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center">
+                            <div style="border-left: 1px solid #ccc; height: 120%;"></div>
+                        </div>
+                        <div class="col">
+                            <label for="rep_distrito" class="form-label">15. DISTRITO:</label>
+                            <input type="text" class="form-control input-sm" id="rep_distrito">
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center">
+                            <div style="border-left: 1px solid #ccc; height: 120%;"></div>
+                        </div>
+                        <div class="col">
+                            <label for="rep_telefono" class="form-label">16. N° TELÉFONO:</label>
+                            <input type="tel" class="form-control input-sm" id="rep_telefono" placeholder="0000-0000">
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center">
+                            <div style="border-left: 1px solid #ccc; height: 120%;"></div>
+                        </div>
+                        <div class="col">
+                            <label for="rep_fax" class="form-label">17. N° FAX:</label>
+                            <input type="tel" class="form-control input-sm" id="rep_fax" placeholder="0000-0000">
+                        </div>
+                    </div>
+                    <div class="row mx-0 form-field">
+                        <div class="col-12">
+                            <label for="rep_email" class="form-label">18. CORREO ELECTRÓNICO PARA NOTIFICACIONES:</label>
+                            <input type="email" class="form-control input-sm" id="rep_email" placeholder="ejemplo@correo.com">
+                        </div>
+                    </div>
+                </div>
+
+<!-- 2) Cuadro II –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div class="container-fluid"> 
+  <div class="section-title text-center small">CUADRO II. IDENTIFICACIÓN DE LA PROPIEDAD</div>
+  <table class="table table-bordered">
+    <tr>
+      <td colspan="2">19. UBICACION<br>Distrito <input type="text" style="width:10px;"> Dirección Exacta <input type="text" ></td>
+      <td>20. N° DE FINCA:</td>
+      <td>22. AREA (M CUADRADOS)</td>
+    </tr>
+    <tr>
+      <td>21. N° PLANO CATASTRO</td>
+      <td colspan="3"></td>
+    </tr>
+    <tr>
+      <td>
+        <div class="split-cell">
+          <div class="split-title" style="text-align: left;">23. SERVICIOS PÚBLICOS QUE POSEE</div>
+          <div class="split-content">
+            <div>
+              Acera <input type="checkbox"><br>
+              Cafetería <input type="checkbox"><br>
+              Teléfono <input type="checkbox"><br>
+              Alumbrado Público <input type="checkbox">
+            </div>
+            <div>
+              Cordón y caño <input type="checkbox"><br>
+              Alcantarillado <input type="checkbox"><br>
+              Electricidad <input type="checkbox"><br>
+              Todos los anteriores <input type="checkbox">
+            </div>
+          </div>
+        </div>
+      </td>
+      <td>24. VIA ACCESO PRINCIPAL:<br>
+        Camino asfaltado <input type="checkbox"> Camino de lastre <input type="checkbox"><br>
+        Camino de tierra <input type="checkbox"> Servidumbre <input type="checkbox"><br>
+        Alameda <input type="checkbox"> Línea férrea <input type="checkbox">
+      </td>
+      <td>25. FRENTE PROPIEDAD<br>metros</td>
+      <td>26. REGULARIDAD<br>
+        Regular <input type="checkbox"> Irregular <input type="checkbox"> %
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="split-cell">
+          <div class="split-title" style="text-align: left;">27. PENDIENTE</div>
+          <div class="split-content">
+            <div>
+              Plano (0 - 5%) <input type="checkbox"><br>
+              Ondulado (5-15%) <input type="checkbox"><br>
+              Accidentado (16 - 30%) <input type="checkbox">
+            </div>
+            <div>
+              Muy accidentado (30-45%) <input type="checkbox"><br>
+              Quebrado (45-60%) <input type="checkbox"><br>
+              Muy quebrado (más de 60%) <input type="checkbox">
+            </div>
+          </div>
+        </div>
+      </td>
+      <td>
+      <div class="split-title" style="text-align: left;">28. NIVEL:</div>
+        A nivel <input type="checkbox"><br>
+        Sobre nivel <input type="checkbox"> Metros<br>
+        Bajo nivel <input type="checkbox"> Metros
+      </td>
+      <td colspan="2">
+      <div class="split-title" style="text-align: left;">29. UBICACIÓN EN LA MANZANA:</div>
+        Manzanero <input type="checkbox">&nbsp;&nbsp;&nbsp; Medianero <input type="checkbox"><br>
+        Cabecero <input type="checkbox">&nbsp;&nbsp;&nbsp;  En callejon lateral <input type="checkbox"><br>
+        Esquinero <input type="checkbox">&nbsp;&nbsp;&nbsp; En callejon al fondo <input type="checkbox"><br>
+        Medianero con dos frentes <input type="checkbox">
+      </td>
+    </tr>
+    <tr>
+      <td>30. HIDROLOGIA:<br>
+        Excelente <input type="checkbox"> Muy bueno <input type="checkbox"><br>
+        Bueno <input type="checkbox"> Regular <input type="checkbox"> Malo <input type="checkbox">
+      </td>
+      <td>31. USO DEL SUELO:<br>
+        Excelente <input type="checkbox"> Muy bueno <input type="checkbox"><br>
+        Bueno <input type="checkbox"> Regular <input type="checkbox"> Malo <input type="checkbox">
+      </td>
+      <td colspan="2">32. VALOR UNITARIO DEL TERRENO:<br>
+        ₡ ______ /Metro cuadrado<br>
+        ₡ ______ /Hectárea
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">33. VALOR TOTAL DEL TERRENO (casilla 22 x casilla 32)<br>Pasar a casilla N°49</td>
+    </tr>
+  </table>
+</div>
+
+<!-- 3) Cuadro III –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="section-title text-center small">CUADRO III. DESCRIPCIÓN DE CONSTRUCCIONES, INSTALACIONES Y OBRAS COMPLEMENTARIAS</div>
+    <table class="table table-bordered form-table mb-0">
+      <thead class="">
+        <tr>
+          <th>34. USO</th>
+          <th>35. EDAD<br>ACTUAL</th>
+          <th>36. ESTADO</th>
+          <th>37. N° PISOS</th>
+          <th>38. NÚMERO APOSENTOS</th>
+          <th>39. ÁREA<br>CONSTRUC.</th>
+          <th>40. VALOR<br>POR M2</th>
+          <th>41. VALOR DE CONSTRUCCIÓN<br>(Casilla 39 X casilla 40)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="text" class="form-control renglon-input"></td>
+          <td><input type="text" class="form-control renglon-input"></td>
+          <td><input type="text" class="form-control renglon-input"></td>
+          <td><input type="text" class="form-control renglon-input"></td>
+          <td><input type="text" class="form-control renglon-input"></td>
+          <td><input type="text" class="form-control renglon-input"></td>
+          <td><input type="text" class="form-control renglon-input"></td>
+          <td><input type="text" class="form-control renglon-input"></td>
+        </tr>
+        <tr>
+          <td><input type="text" class="form-control renglon-input"></td>
+          <td><input type="text" class="form-control renglon-input"></td>
+          <td><input type="text" class="form-control renglon-input"></td>
+          <td><input type="text" class="form-control renglon-input"></td>
+          <td><input type="text" class="form-control renglon-input"></td>
+          <td><input type="text" class="form-control renglon-input"></td>
+          <td><input type="text" class="form-control renglon-input"></td>
+          <td><input type="text" class="form-control renglon-input"></td>
+        </tr>
+      </tbody>
+    </table>
+<div class="section-title">42. VALOR TOTAL DE LAS CONSTRUCCIONES (Llevar a la casilla N° 50)</div>
+<table class="table table-bordered form-table mb-0">
+  <thead class="text-center">
+    <tr>
+      <th style="width: 30%;">43. DESCRIPCIÓN DE<br>LA OBRA</th>
+      <th colspan="2" style="width: 20%;">44. PAREDES EXTERNAS / INTERNAS</th>
+      <th style="width: 10%;">45. CUBIERTA</th>
+      <th style="width: 10%;">46. CIELOS</th>
+      <th style="width: 10%;">47. PISOS</th>
+      <th style="width: 10%;">48. BAÑOS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><input type="text" class="form-control renglon-input"></td>
+      <td>
+        <div style="display: flex; justify-content: space-between;">
+          <input type="text" class="form-control renglon-input" style="width: 48%;">
+          <input type="text" class="form-control renglon-input" style="width: 48%;">
+        </div>
+      </td>
+      <td colspan="2"><input type="text" class="form-control renglon-input"></td>
+      <td><input type="text" class="form-control renglon-input"></td>
+      <td><input type="text" class="form-control renglon-input"></td>
+      <td><input type="text" class="form-control renglon-input"></td>
+    </tr>
+    <tr>
+      <td><input type="text" class="form-control renglon-input"></td>
+      <td>
+        <div style="display: flex; justify-content: space-between;">
+          <input type="text" class="form-control renglon-input" style="width: 48%;">
+          <input type="text" class="form-control renglon-input" style="width: 48%;">
+        </div>
+      </td>
+      <td colspan="2"><input type="text" class="form-control renglon-input"></td>
+      <td><input type="text" class="form-control renglon-input"></td>
+      <td><input type="text" class="form-control renglon-input"></td>
+      <td><input type="text" class="form-control renglon-input"></td>
+    </tr>
+    <tr>
+      <td><input type="text" class="form-control renglon-input"></td>
+      <td>
+        <div style="display: flex; justify-content: space-between;">
+          <input type="text" class="form-control renglon-input" style="width: 48%;">
+          <input type="text" class="form-control renglon-input" style="width: 48%;">
+        </div>
+      </td>
+      <td colspan="2"><input type="text" class="form-control renglon-input"></td>
+      <td><input type="text" class="form-control renglon-input"></td>
+      <td><input type="text" class="form-control renglon-input"></td>
+      <td><input type="text" class="form-control renglon-input"></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- 4) Cuadro IV –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="section-title  text-center">CUADRO IV. DETERMINACIÓN DEL VALOR</div>
+    <div class="row g-1 align-items-center">
+      <div class="col-6"><strong>49. VALOR TOTAL DEL TERRENO (viene de casilla 33)</strong></div>
+      <div class="col-6">₡ <input type="text" class="form-control"></div>
+      <hr style="border-top: 1px solid black; margin: 0;">
+
+      <div class="col-6"><strong>50. VALOR TOTAL DE LA CONSTRUCCIÓN (viene de casilla 41)</strong></div>
+      <div class="col-6">₡ <input type="text" class="form-control"></div>
+      <hr style="border-top: 1px solid black; margin: 0;">
+
+      <div class="col-6"><strong>51. VALOR TOTAL DEL TERRENO Y CONSTRUCCIÓN</strong></div>
+      <div class="col-6">₡ <input type="text" class="form-control"></div>
+      <hr style="border-top: px solid black; margin: 0;">
+    </div>
+  <div class="border-box">
+    <div class="row g-0">
+      <div class="col-2 d-flex align-items-center justify-content-center border-end">
+        <div class="text-center">
+          <strong>Declaro que toda<br>la presente<br>información es<br>cierta, correcta y<br>verdadera</strong>
+        </div>
+      </div>
+      <div class="col-8 text-center">
+        <div style="border: 1px solid #000; display: flex; flex-direction: column;">
+          <textarea style="width: 100%; height: 40px; border: none; text-align: center;" placeholder="Escribe aquí la firma."></textarea>
+          <div style="border-top: 1px solid #000; padding: 1px;">
+            <strong>FIRMA DEL PROPIETARIO</strong>
+          </div>
+        </div>
+      </div>
+      <div class="col-2 d-flex align-items-center justify-content-center">
+        <div class="text-center small">
+          Este formulario debe ser<br>enviado al correo electrónico<br>
+          <strong>bsandi@desamparados.go.cr</strong><br>
+          Consultas al teléfono:<br>
+          <strong>2217-3551</strong>
+        </div>
+      </div>
+    </div>
+  </div>     
+        </div>
+    </div>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
+<!-- Fin de Codigo –––––––––––––––––––––––––––––––––––––––––––––––––– -->
